@@ -1,0 +1,48 @@
+package mypack;
+import mypack.Point2d;
+public class Point3d extends Point2d {
+	private double zCoord;
+	public Point3d() {
+		super();
+		zCoord=0;
+	}
+	public Point3d(double x, double y, double z) {
+		super(x,y);
+		zCoord=z;
+	}
+	public double getZ() {
+		return zCoord;
+	}
+	public void setZ(double z) {
+		zCoord=z;
+	}
+	/**
+	 * Comparison of vector lengths
+	 * @param point - end of the vector 
+	 * @return true if this point <= param point 
+	 */
+	public boolean ComparePoints(Point3d point) {
+		return distanceTo(this)<=distanceTo(point);
+	}
+	
+//	@Override
+//	public boolean equals(Object obj) {
+//		Point3d a = (Point3d)obj;
+//		return a.getX()==this.getX() &&
+//				a.getY()==this.getY() &&
+//				a.getZ()==this.getZ();
+//	}
+	/**		
+	 * Calculate distance between this point and param point
+	 * @param point
+	 * @return distance between this point and param point
+	 */
+	public double distanceTo(Point3d point) {
+		return Math.sqrt(
+				Math.pow(point.getX()-this.getX(),2)+
+				Math.pow(point.getY()-this.getY(),2)+
+				Math.pow(point.getZ()-this.getZ(),2)
+				);
+	}
+	
+}
