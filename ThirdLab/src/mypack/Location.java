@@ -25,4 +25,15 @@ public class Location
     {
         this(0, 0);
     }
+    @Override
+    public boolean equals(Object a) {
+    	if (a instanceof Location) {
+    		return ((Location) a).xCoord==xCoord && ((Location)a).yCoord==yCoord;
+    	}
+    	return false;
+    }
+    @Override
+    public int hashCode() {
+    	return xCoord*40+yCoord;
+    }
 }
