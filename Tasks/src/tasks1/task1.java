@@ -11,7 +11,7 @@ public class task1 {
 	}
 	//1.3
 	public static int footballPoints(int wins, int draws, int loses) {
-		return wins*3+draws;
+		return wins*3+draws-loses*2;
 	}
 	//1.4
 	public static boolean divideByFive(int number) {
@@ -19,7 +19,7 @@ public class task1 {
 	}
 	//1.5
 	public static boolean and(boolean a, boolean b) {
-		return a&&b;
+		return a||b;
 	}
 	//1.6
 	public static int howManyWalls(int countWalls, int height, int weight) {
@@ -40,6 +40,9 @@ public class task1 {
 	//1.10
 	public static int mod(int a,int b) {
 		return a-a/b*b;
+	}
+	public static int aa(int a) {
+		return a*24*60*60;
 	}
 	public static void main(String[] args) {
 		
