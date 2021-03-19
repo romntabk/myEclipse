@@ -20,4 +20,18 @@
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="com.sun.java.util.jar.pack.ConstantPool.Entry"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="java.awt.event.MouseAdapter"/>
+    <fullyQualifiedTypeName name="java.awt.event.MouseEvent"/>
+    <fullyQualifiedTypeName name="javax.swing.JComboBox"/>
+    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
+    <fullyQualifiedTypeName name="javax.swing.JLabel"/>
+    <fullyQualifiedTypeName name="javax.swing.filechooser.FileFilter"/>
+    <fullyQualifiedTypeName name="javax.swing.filechooser.FileNameExtensionFilter"/>
+    <fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="javax.swing.JFileChooser"/>
+    <fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
+    <fullyQualifiedTypeName name="java.awt.image.RenderedImage"/>
 </qualifiedTypeNameHistroy>

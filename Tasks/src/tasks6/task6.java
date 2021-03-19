@@ -30,7 +30,7 @@ public class task6 {
 			}
 		}
 		String anagram="";
-		for (int i=6;i<first.length();i++) {
+		for (int i=0;i<first.length();i++) {
 			for (int j=0;j<first.length()-i;j++) {
 				anagram = first.substring(j, j+i+1);
 				if(tasks5.task5.totalPoints(new String[] {second},anagram)>0) {	
@@ -257,7 +257,7 @@ public class task6 {
 		return listik;
 	}
 	public static void main(String[] args) {
-		System.out.println(isValid("aaaabbbbccdcddd"));
+		
 	}
 
 }

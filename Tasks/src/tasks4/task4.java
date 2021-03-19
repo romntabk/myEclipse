@@ -54,8 +54,22 @@ public class task4 {
 					res+="ecks";
 					continue;
 				}
+				
 				if(i==0 || str.charAt(i-1)==' ') {
 					res+="z";
+					continue;
+				}
+				res+="cks";
+				continue;
+			}
+			if(str.charAt(i)=='X') {
+				if(i==str.length()-1 && str.charAt(i-1)==' ' || i==0 && str.charAt(i+1)==' ' || i!=0 && i!=str.length()-1 && str.charAt(i-1)==' ' && str.charAt(i+1)==' ') {
+					res+="ecks";
+					continue;
+				}
+				
+				if(i==0 || str.charAt(i-1)==' ') {
+					res+="Z";
 					continue;
 				}
 				res+="cks";
@@ -77,23 +91,14 @@ public class task4 {
 	}
 	//4.7
 	public static int watafak(int a) {
-		if(a==832)
-			return 594;
-		if(a==51)
-			return 36;
-		if(a==7977)
-			return 198;
-		if(a==1)
-			return 0;
-		if(a==665)
-			return 99;
-		return 0;
+		StringBuilder t= new StringBuilder(Integer.toString(a)).reverse();
+		int dif = Integer.parseInt(t.toString())-a;
+		return dif<0?0:dif;
 	}
 	//4.8
 	public static String commonLastVowel(String str) {
 		String[] strs = str.split(" ");
 		String patern = "AaEeQqYyUuIiOoJj";
-		
 		Map<String,Integer> dictionary = new HashMap<String,Integer>();
 		for (int i=0;i<strs.length;i++) {
 			String lastChar=Character.toString(Character.toLowerCase(strs[i].charAt(strs[i].length()-1)));
@@ -138,7 +143,7 @@ public class task4 {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		System.out.print(xPronounce("Xylophone"));
 	}
 
 }
