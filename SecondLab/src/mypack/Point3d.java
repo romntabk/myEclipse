@@ -1,5 +1,4 @@
 package mypack;
-import mypack.Point2d;
 public class Point3d extends Point2d {
 	private double zCoord;
 	public Point3d() {
@@ -28,7 +27,7 @@ public class Point3d extends Point2d {
 	@Override
 	public boolean equals(Object obj) {
 		Point3d a = (Point3d)obj;
-		return a.getX()==this.getX() &&
+		return a.getX()==this.getX() && 
 				a.getY()==this.getY() &&
 				a.getZ()==this.getZ();
 	}

@@ -10,9 +10,7 @@ public class Palindrome {
 		return reversed;
 	}
 	public static boolean isPalindrome(String str) {
-		if(reverseString(str).equals(str))
-			return true;
-		return false;
+		return reverseString(str).equals(str);
 	}
 	public static void main(String[] args) {
 		for (int i=0;i<args.length;i++) {
